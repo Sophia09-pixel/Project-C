@@ -14,7 +14,7 @@ char c[] = "ABCD", css[] = "JUED" , html[] = "IJXL" , java[] = "OPDW", javascrip
 
 //INICIO DO CODIGO
 
-//FUNÇÃO PARA DECOLAGEM
+//FUNÃ‡ÃƒO PARA DECOLAGEM
 void decolar(int permitir){
 	printf("Aperte: 1 para Permitir decolagem: ");
 	scanf("%d",&permitir);
@@ -23,7 +23,7 @@ void decolar(int permitir){
 	if(permitir==1){
 		printf("3,2,1 VAII!!\n");
 	}else{
-		printf("##APERTE O BOTÃO DE DECOLAGEM##\n");
+		printf("##APERTE O BOTÃƒO DE DECOLAGEM##\n");
 		scanf("%d",&permitir);
 		if(permitir==1){
 		printf("3,2,1 VAII!!\n");
@@ -35,25 +35,25 @@ void decolar(int permitir){
  //FUNCAO EXPLODIR FOGUETE
  void explodir_foguete(int explodir){
  	printf("###KBOOOM###\n");
-			printf("Você explodiu o foguete, lista dos que vieram a óbito:\n %s",nome);
+			printf("VocÃª explodiu o foguete, lista dos que vieram a Ã³bito:\n %s",nome);
 			for(i=1;i<3;i++){
 				printf("\n %s",nomes_tripulantes[i]);
 			}	
 			printf("\n");
  }
  
- //FUNÇÃO DE PONTOS
+ //FUNÃ‡ÃƒO DE PONTOS
  void pontos( int visualizar){
  	printf("\nSeu progresso no jogo:\n\n");
  	
- 		printf("Você perdeu "); vidaperdida=100-vida; printf("%d",vidaperdida); printf(" pontos de vida\n\n");
-		printf("Você foi picado por cobras %d",cobra); printf(" vez(es)\n\n");
-		printf("Você foi mordido por jacarés %d",jacare); printf(" vez(es)\n\n"); 
-		printf("Você caiu em buracos %d",cobra); printf(" vez(es)"); 	
+ 		printf("VocÃª perdeu "); vidaperdida=100-vida; printf("%d",vidaperdida); printf(" pontos de vida\n\n");
+		printf("VocÃª foi picado por cobras %d",cobra); printf(" vez(es)\n\n");
+		printf("VocÃª foi mordido por jacarÃ©s %d",jacare); printf(" vez(es)\n\n"); 
+		printf("VocÃª caiu em buracos %d",cobra); printf(" vez(es)"); 	
 	 
  }
 
-//FUNÇÃO COBRA
+//FUNÃ‡ÃƒO COBRA
 void funcao_cobra(int func_cobra){
 	  	cobra++;
 	  	printf("voce foi picado pela cobra... e perdeu 5 pontos de vida \n");
@@ -62,16 +62,16 @@ void funcao_cobra(int func_cobra){
         printf("%d",vida);	printf("\n"); 
 }	
 
-//FUNÇÃO JACARE
+//FUNÃ‡ÃƒO JACARE
 void funcao_jacare(int func_jacare){
 	  	jacare++;
-	  	printf("voce foi mordido pelo jacaré... e perdeu 7 pontos\n");
+	  	printf("voce foi mordido pelo jacarÃ©... e perdeu 7 pontos\n");
 	  	vida = vida-7;
 		printf("Sua vida e de:\n");
         printf("%d",vida);	printf("\n");		 
 }
 
-//FUNÇÃO BURACO
+//FUNÃ‡ÃƒO BURACO
 void funcao_buraco(int func_buraco){
 	  	buraco++;
 	  	printf("voce caiu no buraco... e perdeu 6 pontos\n");
@@ -86,10 +86,10 @@ int main (){
 setlocale(LC_ALL, "Portuguese");
 
 
-printf("***Administração Nacional de Aeronáutica e Espaco do Brasil***\n");
-printf("Olá, astronauta, bem vindo a central da ANAE, antes do foguete ANTARES BRASILEIRO decolar nos diga o nome dos 3 tripulantes:\n\n ");
+printf("***AdministraÃ§Ã£o Nacional de AeronÃ¡utica e Espaco do Brasil***\n");
+printf("OlÃ¡, astronauta, bem vindo a central da ANAE, antes do foguete ANTARES BRASILEIRO decolar nos diga o nome dos 3 tripulantes:\n\n ");
 
-printf("Primeiro vamos começar com o líder, que é você, qual o seu nome?\n");
+printf("Primeiro vamos comeÃ§ar com o lÃ­der, que Ã© vocÃª, qual o seu nome?\n");
 scanf("%s",&nome);
 
 printf("Agora digite o nomes dos outros 2 tripulantes:\n");
@@ -99,8 +99,8 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	scanf("%s",&nomes_tripulantes[i]);
 }
 		
-	printf("Tudo pronto, vamos começar!\n\n %s",nome); printf(", precisamos que você escolha uma dessas opções para começar a missão,");
-	printf("Aperte:\n1 para Permitir decolagem\n2 para explodir foguete\n3 para Não permitir decolagem.\n");
+	printf("Tudo pronto, vamos comeÃ§ar!\n\n %s",nome); printf(", precisamos que vocÃª escolha uma dessas opÃ§Ãµes para comeÃ§ar a missÃ£o,");
+	printf("Aperte:\n1 para Permitir decolagem\n2 para explodir foguete\n3 para NÃ£o permitir decolagem.\n");
 	scanf("%d",&opcoes);
 	
 	switch(opcoes){
@@ -117,11 +117,11 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 			break;
 		
 		default:
-			printf("Você apertou uma opção que não existe");							
+			printf("VocÃª apertou uma opÃ§Ã£o que nÃ£o existe");							
 	}
 	
 		//PLANETA C
-	printf("Você chegou ao planeta C, digite a senha do planeta C para ter permissão para pousar:\n");
+	printf("VocÃª chegou ao planeta C, digite a senha do planeta C para ter permissÃ£o para pousar:\n");
 	scanf("%d",&C);
 	
 	while (C !=4321){
@@ -129,7 +129,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&C);
 	}
 	  if (C=4321){
-	  	printf("***Permissão concedida***"" \n");
+	  	printf("***PermissÃ£o concedida***"" \n");
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou uma cobra e ira desafia-la\n");
 	  printf("Resolva a seguinte questao:\n");
@@ -188,7 +188,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=16){
 	  	funcao_cobra(func_cobra);
 	  		}else{
-			  	printf("\nvoce segurou na cabeça da cobra e a jogou muito longe!\n\n");
+			  	printf("\nvoce segurou na cabeÃ§a da cobra e a jogou muito longe!\n\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -206,17 +206,17 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	
         printf("\n\nParabens voce conseguiu passar da cobra \n");
 	
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			
 		for(i=0;i<j+4;i++){
 			dnaemprocesso[i]=c[i];
 			}
-			printf("Você voltou para sua nave, agora vamos para o planeta CSS\n");
+			printf("VocÃª voltou para sua nave, agora vamos para o planeta CSS\n");
 			
 			decolar(opcoes);
 			
 		//PLANETA CSS	
-	printf("Você chegou ao planeta CSS, digite a senha do planeta CSS para ter permissão para pousar:\n");
+	printf("VocÃª chegou ao planeta CSS, digite a senha do planeta CSS para ter permissÃ£o para pousar:\n");
 	scanf("%d",&CSS);
 	
 	while (CSS != 6542){
@@ -224,7 +224,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&CSS);
 	}
 	  if (CSS=6542){
-	  	printf("***Permissão concedida***"" \n");
+	  	printf("***PermissÃ£o concedida***"" \n");
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou uma jacare e ira desafia-lo\n");
 	  printf("Resolva a seguinte questao:\n");	
@@ -283,7 +283,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=16){
 	  	funcao_jacare(func_jacare);
 	  		}else{
-			  	printf("\nvoce jogou uma pedra na cabeça do jacare e o jacare desmaiou!\n");
+			  	printf("\nvoce jogou uma pedra na cabeÃ§a do jacare e o jacare desmaiou!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -301,20 +301,20 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
         
         printf("\nParabens voce conseguiu passar do jacare =D\n");
 		
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			int x=0;
 				j=4;
 		for(i=4;i<j+4;i++){
 				dnaemprocesso[i]=css[x];
 				x++;
 			}
-			printf("Você voltou para sua nave, agora vamos para o planeta HTML\n");
+			printf("VocÃª voltou para sua nave, agora vamos para o planeta HTML\n");
 			
 			decolar(opcoes);
 	
 
 	//PLANETA HTML
-		printf("Você chegou ao planeta HTML, digite a senha do planeta HTML para ter permissão para pousar:\n");
+		printf("VocÃª chegou ao planeta HTML, digite a senha do planeta HTML para ter permissÃ£o para pousar:\n");
 	scanf("%d",&HTML);
 	
 	while (HTML != 9876){
@@ -322,10 +322,10 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&HTML);
 	}
 	  if (HTML=9876){
-	  printf("***Permissão concedida***"" \n");
+	  printf("***PermissÃ£o concedida***"" \n");
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou um buraco.\n");
-	  printf("Para que voce não caia no buraco...\n");
+	  printf("Para que voce nÃ£o caia no buraco...\n");
 	  printf("Resolva a seguinte questao:\n");
 	  
 	  do{
@@ -334,7 +334,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=100){
 	  	funcao_buraco(func_buraco);
 	  		}else{
-			  	printf("\no buraco nao era tao grande... então voce pulou o buraco!\n");
+			  	printf("\no buraco nao era tao grande... entÃ£o voce pulou o buraco!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -358,7 +358,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=40){
 	    funcao_buraco(func_buraco);
 	  		}else{
-			  	printf("\nvoce avistou uma passagem do lado do buraco... então voce apenas passou por ela!\n");
+			  	printf("\nvoce avistou uma passagem do lado do buraco... entÃ£o voce apenas passou por ela!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -382,7 +382,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=50){
 	    funcao_buraco(func_buraco);
 	  		}else{
-			  	printf("\nvoce também pulou esse buraco!\n");
+			  	printf("\nvoce tambÃ©m pulou esse buraco!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -400,19 +400,19 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
     
         printf("\nParabens voce conseguiu passar do buraco =D\n");
 		
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			x=0;
 			j=8;
 			for(i=8;i<j+4;i++){
 				dnaemprocesso[i]=html[x];
 				x++;
 			}
-			printf("Você voltou para sua nave, agora vamos para o planeta JAVA\n");
+			printf("VocÃª voltou para sua nave, agora vamos para o planeta JAVA\n");
 			
 			decolar(opcoes);	
 		
 		//PLANETA JAVA	
-		printf("Você chegou ao planeta JAVA, digite a senha do planeta JAVA para ter permissão para pousar:\n");
+		printf("VocÃª chegou ao planeta JAVA, digite a senha do planeta JAVA para ter permissÃ£o para pousar:\n");
 	scanf("%d",&JAVA);
 	
 	while (JAVA != 1234){
@@ -420,7 +420,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&JAVA);
 	}
 	  if (JAVA=1234){
-	  	printf("***Permissão concedida***"" \n");;
+	  	printf("***PermissÃ£o concedida***"" \n");;
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou um jacare.\n");
 	  printf("Resolva a seguinte questao:\n");	
@@ -479,7 +479,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=50){
 	  	funcao_jacare(func_jacare);
 	  		}else{
-			  	printf("\nvoce jogou uma pedra na cabeça do jacare e o jacare desmaiou!\n");
+			  	printf("\nvoce jogou uma pedra na cabeÃ§a do jacare e o jacare desmaiou!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -498,19 +498,19 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
         printf("\nParabens voce conseguiu passar do jacare \n");
 		
 			
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			x=0;
 			j=12;
 			for(i=12;i<j+4;i++){
 				dnaemprocesso[i]=java[x];
 				x++;
 			}
-			printf("Você voltou para sua nave, agora vamos para o planeta JAVASCRIPT\n");
+			printf("VocÃª voltou para sua nave, agora vamos para o planeta JAVASCRIPT\n");
 			
 			decolar(opcoes);			
 				
 			//PLANETA JAVASCRIPT	
-	printf("Você chegou ao planeta JAVASCRIPT, digite a senha do planeta JAVASCRIPT para ter permissão para pousar:\n");
+	printf("VocÃª chegou ao planeta JAVASCRIPT, digite a senha do planeta JAVASCRIPT para ter permissÃ£o para pousar:\n");
 	scanf("%d",&JAVASCRIPT);
 	
 	while (JAVASCRIPT != 5678){
@@ -518,7 +518,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&JAVASCRIPT);
 	}
 	  if (JAVASCRIPT=5678){
-	  	  	printf("***Permissão concedida***"" \n");
+	  	  	printf("***PermissÃ£o concedida***"" \n");
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou uma cobra e ia desafia-lo.\n");
 	  printf("Resolva a seguinte questao:\n");
@@ -579,7 +579,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=70){
 	  	funcao_cobra(func_cobra);
 	  		}else{
-			  	printf("\nvoce segurou na cabeça da cobra e a jogou muito longe!\n\n");
+			  	printf("\nvoce segurou na cabeÃ§a da cobra e a jogou muito longe!\n\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -595,19 +595,19 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
        
       	printf("\nParabens voce conseguiu passar da cobra \n");
 	
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			x=0;
 			j=16;
 			for(i=16;i<j+4;i++){
 				dnaemprocesso[i]=javascript[x];
 				x++;
 			}
-			printf("Você voltou para sua nave, agora vamos para o planeta PYTHON\n");
+			printf("VocÃª voltou para sua nave, agora vamos para o planeta PYTHON\n");
 			
 			decolar(opcoes);	
 				
 	//PLANETA PYTHON			
-	printf("Você chegou ao planeta PYTHON, digite a senha do planeta PYTHON para ter permissão para pousar:\n");
+	printf("VocÃª chegou ao planeta PYTHON, digite a senha do planeta PYTHON para ter permissÃ£o para pousar:\n");
 	scanf("%d",&PYTHON);
 	
 	while (PYTHON != 2456){
@@ -615,10 +615,10 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&PYTHON);
 	}
 	  if (PYTHON=2456){
-	   	printf("***Permissão concedida***"" \n");
+	   	printf("***PermissÃ£o concedida***"" \n");
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou um buraco.\n");
-	  printf("Para que voce não caia no buraco...\n");
+	  printf("Para que voce nÃ£o caia no buraco...\n");
 	  printf("Resolva a seguinte questao:\n");
 	
 	  do{
@@ -627,7 +627,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=36){
 	    funcao_buraco(func_buraco);
 	  		}else{
-			  	printf("\no buraco nao era tao grande... então voce pulou o buraco!\n");
+			  	printf("\no buraco nao era tao grande... entÃ£o voce pulou o buraco!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -651,7 +651,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=81){
 	    funcao_buraco(func_buraco);
 	  		}else{
-			  	printf("\nvoce avistou uma passagem do lado do buraco... então voce apenas passou por ela!\n");
+			  	printf("\nvoce avistou uma passagem do lado do buraco... entÃ£o voce apenas passou por ela!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -675,7 +675,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=9){
 	    funcao_buraco(func_buraco);
 	  		}else{
-			  	printf("\nvoce também pulou esse buraco!\n");
+			  	printf("\nvoce tambÃ©m pulou esse buraco!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -693,19 +693,19 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
     
         printf("\nParabens voce conseguiu passar do buraco =D\n");
 			
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			x=0;
 			j=20;
 			for(i=20;i<j+4;i++){
 				dnaemprocesso[i]=python[x];
 				x++;
 			}
-			printf("Você voltou para sua nave, agora vamos para o planeta TYPESCRIPT\n");
+			printf("VocÃª voltou para sua nave, agora vamos para o planeta TYPESCRIPT\n");
 			
 			decolar(opcoes);	
 					
 		//PLANETA TYPESCRIPT			
-	printf("Você chegou ao planeta TYPESCRIPT, digite a senha do planeta TYPESCRIPT para ter permissão para pousar:\n");
+	printf("VocÃª chegou ao planeta TYPESCRIPT, digite a senha do planeta TYPESCRIPT para ter permissÃ£o para pousar:\n");
 	scanf("%d",&TYPESCRIPT);
 	
 	while (TYPESCRIPT != 8765){
@@ -713,7 +713,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 		scanf("%d",&TYPESCRIPT);
 	}
 	  if (TYPESCRIPT=8765){
-	  	  	printf("***Permissão concedida***"" \n");
+	  	  	printf("***PermissÃ£o concedida***"" \n");
 	  }
 	  printf("Voce avistou um lago e la esta o DNA, so que no caminho voce encontrou um jacare e ira desafia-lo.\n");
 	  printf("Resolva a seguinte questao:\n");	 
@@ -772,7 +772,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 	    if(resultado!=800){
 	  	funcao_jacare(func_jacare);
 	  		}else{
-			  	printf("\nvoce jogou uma pedra na cabeça do jacare e o jacare desmaiou!\n");
+			  	printf("\nvoce jogou uma pedra na cabeÃ§a do jacare e o jacare desmaiou!\n");
 			  }
 			  if(vida<1){
 			  	printf("==============================================================================================");
@@ -790,7 +790,7 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
         
         printf("\nParabens voce conseguiu passar do buraco =D\n");
 		
-		printf("Você chegou ao lago... mergulhou e pegou o DNA.\n");
+		printf("VocÃª chegou ao lago... mergulhou e pegou o DNA.\n");
 			x=0;
 			j=24;
 			for(i=24;i<j+4;i++){
@@ -798,25 +798,24 @@ printf("Agora digite o nomes dos outros 2 tripulantes:\n");
 				x++;
 			}
 	
-	printf("Você voltou para sua nave, e conferiu o DNA\n.\n.\n.\n");
+	printf("VocÃª voltou para sua nave, e conferiu o DNA\n.\n.\n.\n");
 	if(dnacorreto==dnaemprocesso){
-		printf("Parabéns, você conseguir completar o DNA, volte para a Terra");
+		printf("ParabÃ©ns, vocÃª conseguir completar o DNA, volte para a Terra");
 	}
-	printf("Aperte 4 para voltar à Terra: ");
+	printf("Aperte 4 para voltar Ã  Terra: ");
 	scanf("%d",&opcoes);
 	
 	do{
 	
 	if(opcoes==4){
-		printf("Você voltou a Terra com o DNA completo e salvou a Terra do COVID-19\n Parabéns %s",nome);
-		printf(", todos saúdam seu nome.");
+		printf("VocÃª voltou a Terra com o DNA completo e salvou a Terra do COVID-19\n ParabÃ©ns %s",nome);
+		printf(", todos saÃºdam seu nome.");
 	}else{
-		printf("Aperte a opção voltar para Terra: ");
+		printf("Aperte a opÃ§Ã£o voltar para Terra: ");
 	}
 	}while(opcoes!=4);
 	
 	pontos(visualizar);
 	
 	return 0;
-
 }
